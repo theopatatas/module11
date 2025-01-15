@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Playlist</title>
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', Arial, sans-serif;
+            line-height: 1.6;
+            color: #2c3e50;
+            background-color: #f4f4f9;
+            padding: 20px;
+        }
+
+        /* Header Styling */
+        h1 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+            color: #34495e;
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
+
+        /* Playlist Styling */
+        .playlist {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .playlist-item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 15px 20px;
+            border-bottom: 1px solid #ecf0f1;
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .playlist-item:last-child {
+            border-bottom: none;
+        }
+
+        .playlist-item:hover {
+            background-color: #f9f9fc;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .playlist-item audio {
+            flex-shrink: 0;
+            width: 200px;
+            outline: none;
+        }
+
+        .song-info {
+            font-size: 1rem;
+            color: #7f8c8d;
+            flex-grow: 1;
+            text-align: left;
+            margin-left: 15px;
+        }
+
+        /* Navigation Styling */
+        .navigation {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .navigation a {
+            text-decoration: none;
+            font-size: 1.1rem;
+            color: #2980b9;
+            margin: 0 15px;
+            font-weight: 500;
+            padding: 10px 15px;
+            border: 2px solid transparent;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+
+        .navigation a:hover {
+            color: #fff;
+            background-color: #2980b9;
+            border-color: #2980b9;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+
+            .playlist {
+                padding: 15px;
+            }
+
+            .playlist-item {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .playlist-item audio {
+                width: 100%;
+                margin-bottom: 10px;
+            }
+
+            .song-info {
+                margin-left: 0;
+            }
+
+            .navigation a {
+                font-size: 1rem;
+                padding: 8px 12px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Music Playlist</h1>
+    <div class="playlist">
+        <div class="playlist-item">
+            <audio controls autoplay>
+                <source src="https://open.spotify.com/track/2ONW0ksoUixoxT7gfI9hWX" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+            <div class="song-info">Song 1 - 7/11</div>
+        </div>
+        <div class="playlist-item">
+            <audio controls>
+                <source src="https://open.spotify.com/track/2ONW0ksoUixoxT7gfI9hWX" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+            <div class="song-info">Song 2 - Ow'Eleven</div>
+        </div>
+        <div class="playlist-item">
+            <audio controls>
+                <source src="Downtown Q' - Playaz in dis MF feat. Hev Abi, LK (Official Music Video).mp3
+                " type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+            <div class="song-info">Song 3 - Hev Abi</div>
+        </div>
+        <div class="playlist-item">
+            <audio controls>
+                <source src="911 - Gat Putch, Tu$ Brother$, Wing Goods, Sica, HELLMERRY & SUPAFLY (Official Music Video).mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+            <div class="song-info">Song 4 - Gat Putch, Tu$ Brother$, Wing Goods, Sica, HELLMERRY & SUPAFLY</div>
+        </div>
+    </div>
+    <nav class="navigation">
+        <a href="webpage-3.html">Go to Webpage 3</a> | 
+        <a href="webpage-1.html">Go to Webpage 1</a>
+    </nav>
+</body>
+</html>

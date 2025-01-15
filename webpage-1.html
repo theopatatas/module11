@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <style>
+/* General Reset */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+/* Header Styling */
+h1 {
+    text-align: center;
+    margin: 20px 0;
+    color: #444;
+}
+
+/* Gallery Container */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Images Styling */
+.gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+/* Hover Effects */
+.gallery img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Links Styling */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+    </style>
+</head>
+<body>
+    <h1>Gallery</h1>
+    <div class="gallery">
+        <!-- Link to Webpage 2 -->
+        <a href="webpage-2.html"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLJ70ni7_XwJfGPkZiOJ26qGsaqnAoWmyBy8d3MptNoBPuRWKgTrSv8_wWoYtR1JYoYpM&usqp=CAU" alt="Image 1"></a>
+        
+        <!-- Other Images -->
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKGsSiGfNA8N0-GuCm3fCFex7BjxiQWfV1AQ&s" alt="Image 2">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRit0BeSZWPsVSgj6kBbT1eavXFk93YwC_xc5RYeHJChG2lz62EpTA2CqiIUwkA-nYYeAI&usqp=CAU" alt="Image 3">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWVP1MG_oEvC778ZL8NeonkITUb_xrtfjkJ-iDcBOdJIfonbxs0PvFntNuG8A8pdZ4VAE&usqp=CAU" alt="Image 4">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbJOm6jjxtkIt4Qf4PrSRWYTD2X5kjHrFYUA&s" alt="Image 5">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNT1FtdQA3o1YMRsT1IlaZlMyiVBk3VxxJJNs0SMLrZeey4jw7UJ2AISZkh0BR1EjqOBM&usqp=CAU" alt="Image 6">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8qwctmX_5d0WmJHFZwpfdTvG7QCtyDnN5iu2LjMwH6G3Y96tjYQiAkN7sAOeei83D6nQ&usqp=CAU" alt="Image 7">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsNaNo_1sdFT5Um-R16LivPAIki5AuJbs-pg08vG9q30BDxYORC7RnA_cPl9zzRDaSDQM&usqp=CAU" alt="Image 8">
+        
+        <!-- Link to Webpage 3 -->
+        <a href="webpage-3.html"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoO0ZNK3F24HreB5zmzyc7K2FshFAdtAyNWA&s" alt="Image 9"></a>
+    </div>
+</body>
+</html>

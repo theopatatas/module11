@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Window</title>
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', Arial, sans-serif;
+            line-height: 1.6;
+            color: #2c3e50;
+            background-color: #f9f9fb;
+            padding: 20px;
+        }
+
+        /* Header Styling */
+        h1 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 40px;
+            color: #34495e;
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
+
+        h2 {
+            font-size: 1.8rem;
+            color: #2980b9;
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        /* Video Section Styling */
+        .video-container {
+            max-width: 900px;
+            margin: 0 auto 40px auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        video, iframe {
+            display: block;
+            margin: 20px auto;
+            width: 100%;
+            max-width: 800px;
+            border-radius: 8px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        p {
+            text-align: center;
+            font-size: 1rem;
+            color: #7f8c8d;
+            margin-top: 10px;
+        }
+
+        /* Navigation Styling */
+        .navigation {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .navigation a {
+            text-decoration: none;
+            font-size: 1.1rem;
+            color: #2980b9;
+            margin: 0 15px;
+            font-weight: 500;
+            padding: 10px 15px;
+            border: 2px solid transparent;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+
+        .navigation a:hover {
+            color: #fff;
+            background-color: #2980b9;
+            border-color: #2980b9;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+            }
+
+            p {
+                font-size: 0.9rem;
+            }
+
+            .navigation a {
+                font-size: 1rem;
+                padding: 8px 12px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Video Window</h1>
+    <div class="video-container">
+        <h2>Featured Video</h2>
+        <video controls>
+            <source src="https://www.youtube.com/watch?v=jNzkUV84s_M" type="video/mp4">
+            Your browser does not support the video element.
+        </video>
+        <p>Short description: SUBOMOTO is a celebration of self-assurance and empowerment.</p>
+    </div>
+
+    <div class="video-container">
+        <h2>Most Viewed Video on YouTube</h2>
+        <iframe width="560" height="315" src="Baby Shark Dance .mp4" 
+            title="Most Viewed YouTube Video" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+
+    <nav class="navigation">
+        <a href="webpage-1.html">Go to Webpage 1</a> | 
+        <a href="webpage-2.html">Go to Webpage 2</a>
+    </nav>
+</body>
+</html>
